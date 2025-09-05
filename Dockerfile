@@ -37,14 +37,17 @@ COPY composer.json composer.lock package.json ./
 # Instalar dependencias PHP
 RUN composer install --no-dev --optimize-autoloader --no-scripts
 
-# Instalar dependencias Node.js
-RUN npm ci --only=production
-
 # Copiar el resto de archivos del proyecto
 COPY . .
 
+# Instalar todas las dependencias Node.js (incluyendo dev para el build)
+RUN npm ci
+
 # Compilar assets frontend
 RUN npm run build
+
+# Limpiar dependencias de desarrollo para reducir tamaño
+RUN npm prune --production
 
 # Configurar permisos para Laravel
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
