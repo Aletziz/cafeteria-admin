@@ -1,0 +1,121 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="cafeBackground" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#A1887F"/>
+      <stop offset="50%" stop-color="#8D6E63"/>
+      <stop offset="100%" stop-color="#5D4037"/>
+    </radialGradient>
+    <linearGradient id="espressoGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8D6E63"/>
+      <stop offset="30%" stop-color="#5D4037"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </linearGradient>
+    <radialGradient id="cupGradient3" cx="30%" cy="20%" r="90%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F5F5F5"/>
+      <stop offset="100%" stop-color="#EEEEEE"/>
+    </radialGradient>
+    <linearGradient id="cremaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D7CCC8"/>
+      <stop offset="50%" stop-color="#BCAAA4"/>
+      <stop offset="100%" stop-color="#A1887F"/>
+    </linearGradient>
+    <radialGradient id="machineGradient" cx="30%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#757575"/>
+      <stop offset="70%" stop-color="#424242"/>
+      <stop offset="100%" stop-color="#212121"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+    </filter>
+  </defs>
+  
+  <!-- Cafe interior background -->
+  <rect width="1920" height="1080" fill="url(#cafeBackground)"/>
+  
+  <!-- Cafe atmosphere elements -->
+  <rect x="0" y="0" width="1920" height="300" fill="rgba(161,136,127,0.3)"/>
+  <rect x="0" y="800" width="1920" height="280" fill="rgba(93,64,55,0.4)"/>
+  
+  <!-- Espresso machine silhouette -->
+  <g transform="translate(200, 300)">
+    <!-- Machine body -->
+    <rect x="0" y="0" width="300" height="400" rx="20" fill="url(#machineGradient)"/>
+    <!-- Machine details -->
+    <circle cx="150" cy="100" r="40" fill="#616161" stroke="#424242" stroke-width="3"/>
+    <rect x="50" y="200" width="200" height="80" rx="10" fill="#424242"/>
+    <rect x="70" y="220" width="160" height="40" rx="5" fill="#212121"/>
+    <!-- Steam wand -->
+    <rect x="280" y="150" width="60" height="8" rx="4" fill="#757575"/>
+    <circle cx="340" cy="154" r="6" fill="#616161"/>
+  </g>
+  
+  <!-- Main espresso cup scene -->
+  <g transform="translate(960, 600)">
+    <!-- Table surface -->
+    <ellipse cx="0" cy="200" rx="400" ry="100" fill="rgba(93,64,55,0.2)" filter="url(#glow)"/>
+    
+    <!-- Cup shadow -->
+    <ellipse cx="0" cy="180" rx="120" ry="30" fill="rgba(0,0,0,0.3)" filter="url(#glow)"/>
+    
+    <!-- Espresso cup -->
+    <g>
+      <!-- Cup body -->
+      <path d="M -100 80 Q -100 140 -70 150 L 70 150 Q 100 140 100 80 L 90 -20 Q 90 -30 80 -30 L -80 -30 Q -90 -30 -90 -20 Z" fill="url(#cupGradient3)" stroke="#E0E0E0" stroke-width="2"/>
+      
+      <!-- Espresso coffee -->
+      <ellipse cx="0" cy="-20" rx="75" ry="15" fill="url(#espressoGradient)"/>
+      
+      <!-- Crema layer -->
+      <ellipse cx="0" cy="-25" rx="70" ry="12" fill="url(#cremaGradient)" opacity="0.9"/>
+      
+      <!-- Cup handle -->
+      <path d="M 100 20 Q 140 20 140 50 Q 140 80 100 80" fill="none" stroke="url(#cupGradient3)" stroke-width="12" stroke-linecap="round"/>
+      
+      <!-- Saucer -->
+      <ellipse cx="0" cy="150" rx="130" ry="20" fill="url(#cupGradient3)" stroke="#E0E0E0" stroke-width="1"/>
+    </g>
+    
+    <!-- Coffee aroma steam -->
+    <path d="M -30 -30 Q -25 -50 -30 -70 Q -35 -90 -30 -110" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" opacity="0.6">
+      <animate attributeName="d" values="M -30 -30 Q -25 -50 -30 -70 Q -35 -90 -30 -110;M -30 -30 Q -35 -50 -30 -70 Q -25 -90 -30 -110;M -30 -30 Q -25 -50 -30 -70 Q -35 -90 -30 -110" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 0 -30 Q 5 -50 0 -70 Q -5 -90 0 -110" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" opacity="0.5">
+      <animate attributeName="d" values="M 0 -30 Q 5 -50 0 -70 Q -5 -90 0 -110;M 0 -30 Q -5 -50 0 -70 Q 5 -90 0 -110;M 0 -30 Q 5 -50 0 -70 Q -5 -90 0 -110" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 30 -30 Q 25 -50 30 -70 Q 35 -90 30 -110" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" opacity="0.4">
+      <animate attributeName="d" values="M 30 -30 Q 25 -50 30 -70 Q 35 -90 30 -110;M 30 -30 Q 35 -50 30 -70 Q 25 -90 30 -110;M 30 -30 Q 25 -50 30 -70 Q 35 -90 30 -110" dur="4.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Coffee beans artistically placed -->
+  <ellipse cx="400" cy="900" rx="15" ry="22" fill="#5D4037" transform="rotate(45 400 900)"/>
+  <ellipse cx="550" cy="850" rx="12" ry="18" fill="#4E342E" transform="rotate(-30 550 850)"/>
+  <ellipse cx="700" cy="920" rx="14" ry="20" fill="#5D4037" transform="rotate(75 700 920)"/>
+  <ellipse cx="1300" cy="880" rx="13" ry="19" fill="#4E342E" transform="rotate(-45 1300 880)"/>
+  <ellipse cx="1500" cy="940" rx="11" ry="16" fill="#5D4037" transform="rotate(30 1500 940)"/>
+  <ellipse cx="1650" cy="890" rx="12" ry="18" fill="#4E342E" transform="rotate(-60 1650 890)"/>
+  
+  <!-- Additional atmospheric beans -->
+  <ellipse cx="150" cy="200" rx="8" ry="12" fill="#5D4037" transform="rotate(20 150 200)" opacity="0.7"/>
+  <ellipse cx="1750" cy="250" rx="9" ry="13" fill="#4E342E" transform="rotate(-80 1750 250)" opacity="0.6"/>
+  <ellipse cx="100" cy="500" rx="7" ry="11" fill="#5D4037" transform="rotate(95 100 500)" opacity="0.8"/>
+  <ellipse cx="1800" cy="550" rx="8" ry="12" fill="#4E342E" transform="rotate(-10 1800 550)" opacity="0.7"/>
+  
+  <!-- Cafe window light effect -->
+  <rect x="1400" y="100" width="400" height="600" fill="rgba(255,255,255,0.1)" filter="url(#glow)"/>
+  
+  <!-- Warm ambient lighting -->
+  <circle cx="300" cy="150" r="200" fill="rgba(255,248,220,0.08)" filter="url(#glow)"/>
+  <circle cx="1600" cy="200" r="150" fill="rgba(255,248,220,0.06)" filter="url(#glow)"/>
+  
+  <!-- Coffee shop atmosphere particles -->
+  <circle cx="800" cy="300" r="3" fill="rgba(255,255,255,0.3)" opacity="0.6">
+    <animate attributeName="cy" values="300;250;300" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1200" cy="400" r="2" fill="rgba(255,255,255,0.2)" opacity="0.5">
+    <animate attributeName="cy" values="400;350;400" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

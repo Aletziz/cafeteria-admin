@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#6F4E37;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#D2691E;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg1)"/>
+  
+  <!-- Coffee beans scattered -->
+  <ellipse cx="200" cy="150" rx="8" ry="12" fill="#3E2723" opacity="0.6" transform="rotate(45 200 150)"/>
+  <ellipse cx="350" cy="300" rx="6" ry="10" fill="#3E2723" opacity="0.5" transform="rotate(-30 350 300)"/>
+  <ellipse cx="800" cy="200" rx="7" ry="11" fill="#3E2723" opacity="0.4" transform="rotate(60 800 200)"/>
+  <ellipse cx="1200" cy="400" rx="9" ry="13" fill="#3E2723" opacity="0.6" transform="rotate(-45 1200 400)"/>
+  <ellipse cx="1600" cy="250" rx="5" ry="8" fill="#3E2723" opacity="0.5" transform="rotate(30 1600 250)"/>
+  
+  <!-- Coffee cup silhouette -->
+  <g transform="translate(1400, 600)" opacity="0.3">
+    <path d="M0 80 Q0 60 20 60 L80 60 Q100 60 100 80 L100 120 Q100 140 80 140 L20 140 Q0 140 0 120 Z" fill="#3E2723"/>
+    <ellipse cx="50" cy="60" rx="40" ry="8" fill="#3E2723"/>
+    <path d="M100 80 Q120 80 120 100 Q120 120 100 120" stroke="#3E2723" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Steam effect -->
+  <g transform="translate(1430, 580)" opacity="0.2">
+    <path d="M10 0 Q15 -10 10 -20 Q5 -30 10 -40" stroke="#FFF" stroke-width="2" fill="none"/>
+    <path d="M20 0 Q25 -10 20 -20 Q15 -30 20 -40" stroke="#FFF" stroke-width="2" fill="none"/>
+    <path d="M30 0 Q35 -10 30 -20 Q25 -30 30 -40" stroke="#FFF" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Abstract coffee plant leaves -->
+  <g transform="translate(100, 800)" opacity="0.4">
+    <path d="M0 0 Q20 -20 40 0 Q20 20 0 0" fill="#2E7D32"/>
+    <path d="M50 10 Q70 -10 90 10 Q70 30 50 10" fill="#2E7D32"/>
+  </g>
+</svg>

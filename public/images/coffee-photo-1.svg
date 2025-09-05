@@ -1,0 +1,72 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="coffeeGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="40%" stop-color="#654321"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </radialGradient>
+    <linearGradient id="steamGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.8)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.1)"/>
+    </linearGradient>
+    <radialGradient id="cupGradient" cx="30%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F5F5F5"/>
+      <stop offset="100%" stop-color="#E0E0E0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#coffeeGradient)"/>
+  
+  <!-- Coffee beans scattered -->
+  <ellipse cx="200" cy="150" rx="8" ry="12" fill="#5D4037" transform="rotate(45 200 150)"/>
+  <ellipse cx="350" cy="200" rx="6" ry="10" fill="#4E342E" transform="rotate(-30 350 200)"/>
+  <ellipse cx="500" cy="120" rx="7" ry="11" fill="#5D4037" transform="rotate(60 500 120)"/>
+  <ellipse cx="1200" cy="180" rx="8" ry="12" fill="#4E342E" transform="rotate(-45 1200 180)"/>
+  <ellipse cx="1400" cy="250" rx="6" ry="10" fill="#5D4037" transform="rotate(30 1400 250)"/>
+  <ellipse cx="1600" cy="160" rx="7" ry="11" fill="#4E342E" transform="rotate(-60 1600 160)"/>
+  
+  <!-- Main coffee cup -->
+  <g transform="translate(960, 540)">
+    <!-- Cup shadow -->
+    <ellipse cx="0" cy="200" rx="180" ry="40" fill="rgba(0,0,0,0.3)" filter="url(#blur)"/>
+    
+    <!-- Cup body -->
+    <path d="M -150 100 Q -150 180 -100 200 L 100 200 Q 150 180 150 100 L 120 -100 Q 120 -120 100 -120 L -100 -120 Q -120 -120 -120 -100 Z" fill="url(#cupGradient)" stroke="#D0D0D0" stroke-width="2"/>
+    
+    <!-- Coffee surface -->
+    <ellipse cx="0" cy="-100" rx="110" ry="20" fill="#3E2723"/>
+    
+    <!-- Coffee foam/crema -->
+    <ellipse cx="0" cy="-105" rx="100" ry="15" fill="#8D6E63" opacity="0.8"/>
+    
+    <!-- Cup handle -->
+    <path d="M 150 -20 Q 200 -20 200 20 Q 200 60 150 60" fill="none" stroke="url(#cupGradient)" stroke-width="15" stroke-linecap="round"/>
+    
+    <!-- Steam -->
+    <path d="M -30 -120 Q -25 -140 -30 -160 Q -35 -180 -30 -200" fill="none" stroke="url(#steamGradient)" stroke-width="3" opacity="0.7">
+      <animate attributeName="d" values="M -30 -120 Q -25 -140 -30 -160 Q -35 -180 -30 -200;M -30 -120 Q -35 -140 -30 -160 Q -25 -180 -30 -200;M -30 -120 Q -25 -140 -30 -160 Q -35 -180 -30 -200" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 0 -120 Q 5 -140 0 -160 Q -5 -180 0 -200" fill="none" stroke="url(#steamGradient)" stroke-width="3" opacity="0.6">
+      <animate attributeName="d" values="M 0 -120 Q 5 -140 0 -160 Q -5 -180 0 -200;M 0 -120 Q -5 -140 0 -160 Q 5 -180 0 -200;M 0 -120 Q 5 -140 0 -160 Q -5 -180 0 -200" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 30 -120 Q 25 -140 30 -160 Q 35 -180 30 -200" fill="none" stroke="url(#steamGradient)" stroke-width="3" opacity="0.5">
+      <animate attributeName="d" values="M 30 -120 Q 25 -140 30 -160 Q 35 -180 30 -200;M 30 -120 Q 35 -140 30 -160 Q 25 -180 30 -200;M 30 -120 Q 25 -140 30 -160 Q 35 -180 30 -200" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Coffee beans around the cup -->
+  <ellipse cx="600" cy="700" rx="10" ry="15" fill="#5D4037" transform="rotate(25 600 700)"/>
+  <ellipse cx="750" cy="650" rx="8" ry="12" fill="#4E342E" transform="rotate(-45 750 650)"/>
+  <ellipse cx="1300" cy="680" rx="9" ry="13" fill="#5D4037" transform="rotate(60 1300 680)"/>
+  <ellipse cx="1450" cy="720" rx="7" ry="11" fill="#4E342E" transform="rotate(-30 1450 720)"/>
+  
+  <!-- Ambient lighting effects -->
+  <circle cx="400" cy="300" r="100" fill="rgba(255,255,255,0.1)" filter="url(#blur)"/>
+  <circle cx="1500" cy="400" r="80" fill="rgba(255,255,255,0.08)" filter="url(#blur)"/>
+</svg>

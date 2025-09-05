@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6F4E37;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#8B4513;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#A0522D;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg2)"/>
+  
+  <!-- Large coffee cup in background -->
+  <g transform="translate(300, 300)" opacity="0.2">
+    <path d="M0 200 Q0 150 50 150 L250 150 Q300 150 300 200 L300 350 Q300 400 250 400 L50 400 Q0 400 0 350 Z" fill="#3E2723"/>
+    <ellipse cx="150" cy="150" rx="125" ry="25" fill="#3E2723"/>
+    <path d="M300 200 Q350 200 350 275 Q350 350 300 350" stroke="#3E2723" stroke-width="8" fill="none"/>
+  </g>
+  
+  <!-- Coffee beans pattern -->
+  <ellipse cx="1300" cy="200" rx="10" ry="15" fill="#3E2723" opacity="0.5" transform="rotate(30 1300 200)"/>
+  <ellipse cx="1450" cy="350" rx="8" ry="12" fill="#3E2723" opacity="0.6" transform="rotate(-60 1450 350)"/>
+  <ellipse cx="1600" cy="500" rx="12" ry="18" fill="#3E2723" opacity="0.4" transform="rotate(45 1600 500)"/>
+  <ellipse cx="1750" cy="650" rx="9" ry="14" fill="#3E2723" opacity="0.5" transform="rotate(-30 1750 650)"/>
+  
+  <!-- Coffee grinder silhouette -->
+  <g transform="translate(1200, 700)" opacity="0.3">
+    <rect x="0" y="0" width="80" height="100" rx="10" fill="#3E2723"/>
+    <circle cx="40" cy="30" r="25" fill="none" stroke="#3E2723" stroke-width="4"/>
+    <circle cx="40" cy="30" r="15" fill="#3E2723"/>
+    <rect x="30" y="100" width="20" height="40" fill="#3E2723"/>
+  </g>
+  
+  <!-- Decorative coffee splash -->
+  <g transform="translate(800, 800)" opacity="0.25">
+    <circle cx="0" cy="0" r="30" fill="#8B4513"/>
+    <circle cx="20" cy="-10" r="15" fill="#8B4513"/>
+    <circle cx="-15" cy="15" r="20" fill="#8B4513"/>
+    <circle cx="25" cy="20" r="12" fill="#8B4513"/>
+  </g>
+</svg>
