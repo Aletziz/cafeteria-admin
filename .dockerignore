@@ -1,0 +1,62 @@
+# Archivos de desarrollo
+.env
+.env.local
+.env.*.local
+
+# Dependencias
+node_modules
+vendor
+
+# Logs
+storage/logs/*
+!storage/logs/.gitignore
+
+# Cache
+storage/framework/cache/*
+!storage/framework/cache/.gitignore
+storage/framework/sessions/*
+!storage/framework/sessions/.gitignore
+storage/framework/views/*
+!storage/framework/views/.gitignore
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# Base de datos local
+database/database.sqlite
+*.sqlite
+
+# Archivos de Git
+.git
+.gitignore
+.gitattributes
+
+# Archivos de IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de testing
+.phpunit.result.cache
+tests
+
+# Documentación
+README.md
+CHANGELOG.md
+INSTALACION.md
+
+# Archivos de deployment
+render.yaml
+build.sh
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Carpeta de cafeteria-app dentro de admin
+cafeteria-app
